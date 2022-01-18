@@ -1,7 +1,7 @@
 // module wrapper function
 // (function (exports , require , module , __filename,__dirname){
 // })
-console.log(__dirname, __filename);
+//console.log(__dirname, __filename);
 
 const person = {
   name: 'John Doe',
