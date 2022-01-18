@@ -49,17 +49,17 @@ Following tuitorials and blogs to get hands on in Node JS before moving to frame
 - Module exports
 - To include one file in another
 - Module wrapper function
-  - § (function (exports , require , module , **filename,**dirname){
+  - § (function (exports , require , module ,\_\_filename, \_\_dirname){
     })
   - § Wrapped around a module while exporting it
 - Why not use Import ?
   - import Person from './person'
   - Node has not implemented this es6 syntax of JS. We have to use Babble to be able to use this
 - Core node modules
-- https://nodejs.org/dist/latest-v16.x/docs/api/
-- Path module - https://nodejs.org/dist/latest-v16.x/docs/api/path.html
+- [Node Modules](https://nodejs.org/dist/latest-v16.x/docs/api/)
+- [Path module](https://nodejs.org/dist/latest-v16.x/docs/api/path.html)
   - Works with file directories
-- Fs module - https://nodejs.org/dist/latest-v16.x/docs/api/fs.html
+- [Fs module](https://nodejs.org/dist/latest-v16.x/docs/api/fs.html)
   - Mkdir
   - Async, but most methods also have sync version
   - Async has a callback, sync does not
