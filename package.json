@@ -4,7 +4,9 @@
   "description": "node crash course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev":"nodemon index"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/StringAna/NodeJsHandsOn#readme",
   "dependencies": {
+    "nodemon": "^2.0.15",
     "uuid": "^8.3.2"
   }
 }
