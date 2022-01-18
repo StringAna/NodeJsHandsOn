@@ -24,16 +24,30 @@ const server = http.createServer((req, res) => {
     );
   }
   //if req url is /about, load about page
-  if (req.url == '/about') {
-    fs.readFile(
-      path.join(__dirname, 'public', 'about.html'),
-      (err, content) => {
-        if (err) throw err;
-        //add a content type
-        res.writeHead(200, { 'Content-type': 'text/html' });
-        res.end(content);
-      }
-    );
+  //   if (req.url == '/about') {
+  //     fs.readFile(
+  //       path.join(__dirname, 'public', 'about.html'),
+  //       (err, content) => {
+  //         if (err) throw err;
+  //         //add a content type
+  //         res.writeHead(200, { 'Content-type': 'text/html' });
+  //         res.end(content);
+  //       }
+  //     );
+  //   }
+
+  //like a rest api, we want to serve json instead of html
+  if (req.url == '/api/users') {
+    //normally we would fetch data from dbase, here we just hardcode it
+    const users = [
+      { name: 'Bob Smith', age: 40 },
+      { name: 'jason herald', age: 98 },
+    ];
+    //setting content type as json
+    res.writeHead(200, { 'Content-type': 'application/json' });
+
+    //to turn the users array of objects to json type
+    res.end(JSON.stringify(users));
   }
 });
 
