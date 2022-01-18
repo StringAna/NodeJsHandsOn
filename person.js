@@ -1,3 +1,8 @@
+// module wrapper function
+// (function (exports , require , module , __filename,__dirname){
+// })
+console.log(__dirname, __filename);
+
 const person = {
   name: 'John Doe',
   age: 30,
