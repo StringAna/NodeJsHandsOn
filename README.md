@@ -75,4 +75,4 @@ Following tuitorials and blogs to get hands on in Node JS before moving to frame
 - While trying to deploy to heroku through bash terminal in my visual studio code, I kept getting 'heroku : command not found'.
 - What fixed it was following :-
   - the steps from the official documentation related to node js setup :- [Getting Started on Heroku with Node Js](https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true)
-  - then going to the bash terminal in my vsc and doing ** npm i -g heroku ** . I tried to install it locally but it still didn't work, not until I installed it globally.
+  - then going to the bash terminal in my vsc and doing **npm i -g heroku** . I tried to install it locally but it still didn't work, not until I installed it globally.
