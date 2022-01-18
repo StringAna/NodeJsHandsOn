@@ -13,7 +13,7 @@ Following tuitorials and blogs to get hands on in Node JS before moving to frame
 
 - Node is runtime, express is a framework that is used with node
 - What is Node Js
-  - Js runtime - js runs on your machine, not on the browser ???
+  - Js runtime
 - Non blocking IO
   - Node is Async, php is sync
   - Non blocking on a single thread
